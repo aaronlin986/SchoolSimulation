@@ -19,5 +19,5 @@ public abstract class School {
 		numSecurity = 0;
 		numDepartment = 0;
 		numClass = 0;
-	}
+	} 
 }
