@@ -1,1 +1,1 @@
-# SchoolSimulation
+# A game - School Simulation
