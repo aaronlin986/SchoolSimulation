@@ -1,5 +1,6 @@
 
 public abstract class School {
+	Grid schoolGrid;
 	int numStudent;
 	int numTeacher;
 	int numJanitor;
