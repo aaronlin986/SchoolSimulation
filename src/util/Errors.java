@@ -2,7 +2,8 @@ package util;
 
 public enum Errors {
 	
-	INVALID_GRID_SIZE("The size of the newly created grid is invalid!");
+	INVALID_GRID_SIZE("The size of the newly created grid is invalid!"),
+	ALREADY_OCCUPIED_TILE("This tile is already occupied!");
 	
 	private final String errorString;
 	
