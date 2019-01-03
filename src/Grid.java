@@ -2,6 +2,7 @@ import util.Errors;
 
 public class Grid {
 	
+	private final static int DEFAULT_GRID_SIZE = 60;
 	protected int sizeX;
 	protected int sizeY;
 	Tile[][] gridMap;
@@ -12,7 +13,7 @@ public class Grid {
 	 * constructor that takes in one parameter
 	 */
 	public Grid() {
-		this(60);
+		this(DEFAULT_GRID_SIZE);
 	}
 	
 	/**
@@ -27,7 +28,7 @@ public class Grid {
 		gridMap = new Tile[x][x];
 		for(int i = 0; i < gridMap.length; i++) {
 			for(int j = 0; j < gridMap[0].length; j++) {
-				Tile t = new Tile();
+				Tile t = new Tile(i, j);	//Create new empty tile with coordinate informations
 				gridMap[i][j] = t;
 			}
 		}
@@ -46,7 +47,7 @@ public class Grid {
 		gridMap = new Tile[x][y];
 		for(int i = 0; i < gridMap.length; i++) {
 			for(int j = 0; j < gridMap[0].length; j++) {
-				Tile t = new Tile();
+				Tile t = new Tile(i, j);	//Create new empty tile with coordinate informations
 				gridMap[i][j] = t;
 			}
 		}
