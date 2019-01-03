@@ -33,4 +33,15 @@ public class Tile{
 			this.isOccupied = true;
 		}
 	}
+	
+	public void delOccupant() {
+		if(isOccupied == false) {
+			System.err.println(Errors.NON_OCCUPIED_TILE.toString());
+			return;
+		}
+		else {
+			this.occupant = null;
+			this.isOccupied = false;
+		}
+	}
 }
