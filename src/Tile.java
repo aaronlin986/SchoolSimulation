@@ -33,4 +33,19 @@ public class Tile{
 			this.isOccupied = true;
 		}
 	}
+	
+	/**
+	 * Atempts to delete occupant from a tile
+	 * Returns an error if the tile is empty
+	 */
+	public void delOccupant() {
+		if(isOccupied == false) {
+			System.err.println(Errors.NON_OCCUPIED_TILE.toString());
+			return;
+		}
+		else {
+			this.occupant = null;
+			this.isOccupied = false;
+		}
+	}
 }
