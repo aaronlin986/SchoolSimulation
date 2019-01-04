@@ -1,3 +1,4 @@
+
 import util.Errors;
 
 public class Tile{
@@ -35,7 +36,7 @@ public class Tile{
 	}
 	
 	/**
-	 * Atempts to delete occupant from a tile
+	 * Attempts to delete occupant from a tile
 	 * Returns an error if the tile is empty
 	 */
 	public void delOccupant() {
